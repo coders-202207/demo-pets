@@ -1,8 +1,13 @@
+:root {
+  --main-color: #ed6436;
+  --main-text-color: #030;
+}
 * {
   box-sizing: border-box;
 }
 html {
   font-family: Nunito, sans-serif;
+  color: var(--main-text-color);
 }
 body {
   margin: 0;
