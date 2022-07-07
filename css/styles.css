@@ -51,12 +51,28 @@ h6 {
   border: 2px solid var(--main-color);
   border-radius: 0 50px 50px 50px;
   text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 .button--big {
   padding: 0.5rem 1rem;
 }
+.button--small {
+  padding: 0.2rem 0.5rem;
+}
 .button--solid {
   background-color: var(--main-color);
   color: #fff;
-  font-weight: bold;
+}
+.button--solid:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.button--transparent {
+  background-color: transparent;
+}
+.button--transparent:hover {
+  background-color: var(--main-color);
+  color: #fff;
 }
