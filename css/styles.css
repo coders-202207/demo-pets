@@ -9,6 +9,9 @@ html {
   font-family: Nunito, sans-serif;
   color: var(--main-text-color);
 }
+img {
+  max-width: 100%;
+}
 button {
   font-family: Nunito, sans-serif;
 }
@@ -54,11 +57,12 @@ h6 {
 }
 .main-content {
   margin: 0 50px;
+  border: 1px dashed blue;
 }
 @media (min-width: 900px) {
   .main-content {
     margin: 0 auto;
-    width: 800px;
+    width: 970px;
   }
 }
 .activities-list__header {
@@ -103,4 +107,25 @@ h6 {
     font-size: 3.5rem;
     text-align: left;
   }
+}
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 900px) {
+  .activities {
+    flex-direction: row;
+  }
+}
+.activity {
+  height: 350px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.activity__image {
+  object-fit: cover;
+  min-height: 100%;
 }
