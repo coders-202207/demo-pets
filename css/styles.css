@@ -61,6 +61,24 @@ h6 {
     width: 800px;
   }
 }
+.activities-list__header {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .activities-list__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.activities-list__button-wrapper {
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .activities-list__button-wrapper {
+    align-self: flex-end;
+  }
+}
 .activities-list__title {
   color: var(--main-color);
   font-size: 1.2rem;
@@ -77,6 +95,7 @@ h6 {
 .activities-list__subtitle {
   text-align: center;
   font-size: 2.5rem;
+  line-height: 1;
   margin-top: 20px;
 }
 @media (min-width: 900px) {
