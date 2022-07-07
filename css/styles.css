@@ -124,8 +124,38 @@ h6 {
   height: 350px;
   border-radius: 50px;
   overflow: hidden;
+  position: relative;
+}
+.activity::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0004;
+  transition: all 0.2s;
 }
 .activity__image {
   object-fit: cover;
   min-height: 100%;
+}
+.activity__info {
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: all 0.2s;
+}
+@media (min-width: 900px) {
+  .activity::before,
+  .activity__info {
+    opacity: 0;
+  }
+  .activity:hover::before,
+  .activity:hover .activity__info {
+    opacity: 1;
+  }
 }
