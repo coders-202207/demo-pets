@@ -23,30 +23,6 @@ h5,
 h6 {
   margin: 0;
 }
-.main-title {
-  color: var(--main-color);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 20px;
-}
-@media (min-width: 900px) {
-  .main-title {
-    font-size: 1.4rem;
-    text-align: left;
-  }
-}
-.subtitle {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 20px;
-}
-@media (min-width: 900px) {
-  .subtitle {
-    font-size: 3.5rem;
-    text-align: left;
-  }
-}
 .button {
   border: 2px solid var(--main-color);
   border-radius: 0 50px 50px 50px;
@@ -75,4 +51,37 @@ h6 {
 .button--transparent:hover {
   background-color: var(--main-color);
   color: #fff;
+}
+.main-content {
+  margin: 0 50px;
+}
+@media (min-width: 900px) {
+  .main-content {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+.activities-list__title {
+  color: var(--main-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (min-width: 900px) {
+  .activities-list__title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+.activities-list__subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+@media (min-width: 900px) {
+  .activities-list__subtitle {
+    font-size: 3.5rem;
+    text-align: left;
+  }
 }
